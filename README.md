@@ -1,16 +1,24 @@
-# unlike
-A script that unlikes everything you've ever liked on Instagram.
+# Unlike                                                                                                                                                                                                                                                                                                                  
+   
+  A script that unlikes everything you've ever liked on Instagram.                                                                                                                                                                                                                                                          
+                                                            
+  https://github.com/user-attachments/assets/77afb43d-9073-459a-9f72-19d8f19b1132
 
-What's the point of all those likes anyway after your friends have already seen them? They're just getting mined by Meta and bots now.
+  What's the point of all those likes after your friends have already seen them? They're just getting mined by Meta and bots now.
 
-Tried Claude in Chrome for this first but it was pretty bad (partly bc web-IG is terrible) and blew through way too may tokens. 
+  Tried Claude in Chrome for this but it was pretty bad (partly because web-IG is terrible) and blew through way too many tokens.
 
-Some custom bots exist for this but many are sketch. This script is simple enough to see it's not malicious and just runs in your browser's javascript console.
+  Some custom bots exist for this but many are sketchy. This script is simple enough to see it's not malicious and just runs in your browser's JavaScript console.
 
-Note: as of now you will need to click 'unlike' once per batch. I was about to fix this but then ran out of likes and was over it, hah.
+  ## Usage
 
-Batch size: I found the IG site erroring out beyond 27 at a time. Your mileage may vary.
+  1. Open Instagram in a browser
+  2. Go to **More → Your Activity → Likes**
+  3. Open Developer Tools (`Cmd+Option+J` / `Ctrl+Shift+J`)
+  4. Paste the script into the Console and hit Enter
+  5. Click **Unlike** once per batch when prompted
 
-Usage:
-Open Instagram in a browser -> More -> Your Activity
-Open Developer Tools -> Console -> paste the script in and hit enter
+  ## Notes
+
+  - **Batch size**: Instagram may error out beyond 27 at a time. Your mileage may vary.
+  - Set `window.STOP = true` in the console to pause at any time.
